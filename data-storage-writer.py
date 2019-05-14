@@ -93,6 +93,5 @@ if __name__ == '__main__':
 
 	# Start consuming kafka and writing to hbase.
 	for msg in kafka_consumer:
-		print('test')
 		persist_data(msg.value, hbase_connection, data_table)
 
